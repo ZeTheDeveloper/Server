@@ -11,7 +11,7 @@ namespace Server
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS01;Database=master;Trusted_Connection=True;Integrated Security=True")
+            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS01;Database=master;Trusted_Connection=True;Integrated Security=True") //change according to server
                 .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole())); ;
         }
 
